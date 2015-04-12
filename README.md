@@ -1,2 +1,0 @@
-# Monografo
-Projeto Java
