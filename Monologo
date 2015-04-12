@@ -1,0 +1,32 @@
+import javax.swing.*;
+public class Controle {
+	public static void main(String[]arg){
+		String usr=null;
+		int id=0,op=0;
+		do{
+			op=Integer.parseInt(JOptionPane.showInputDialog(null,"MENU\n"
+					+ "\n1- Cadastro"
+					+ "\n2- Editar"
+					+ "\n3- Listar"
+					+ "\n"
+					+ "\n0- Sair"
+					+ "\nOp \\/"));
+			switch(op){
+			case 1:
+			JOptionPane.showMessageDialog(null,"Bem vindo ao\nCadastro de Usuarios");
+			usr=JOptionPane.showInputDialog(null,"Digite o Nome de Usuario");
+			id=id+1;
+				
+			break;
+			case 3:
+				JOptionPane.showMessageDialog(null,"ID:      User:");
+				for(int i=0;i==id;i++){
+					JOptionPane.showMessageDialog(null,id+":      "+usr);
+					JOptionPane.showConfirmDialog(null,"");
+				}
+			break;
+			}
+		}while(op!=0);
+	}
+
+}
